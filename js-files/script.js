@@ -107,3 +107,11 @@ buttonHandler("brac-button", "brac-title", "brac-number")
 
 buttonHandler("railway-button", "railway-title", "railway-number")
 
+// Call History Clear Button
+
+document.getElementById("clear-button").addEventListener('click', function(){
+
+    document.getElementById("call-history-container").innerHTML = ""
+    callHistory.length = 0;
+
+})
