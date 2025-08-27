@@ -115,3 +115,29 @@ document.getElementById("clear-button").addEventListener('click', function(){
     callHistory.length = 0;
 
 })
+
+// Navigation Bar Copy Count
+
+const navCopy = document.getElementById("copy-count")
+let navCopyCount = 0;
+
+document.getElementById("numbers-grid").addEventListener('click', function(event){
+
+    if(event.target.closest(".copy-button")){
+        
+        const card = event.target.closest(".numbers-card")
+
+        const emergencyNumbers = card.querySelector("p.e-number").innerText
+
+        navigator.clipboard.writeText(emergencyNumbers)
+
+        alert(`The number has been copied : ${emergencyNumbers}`)
+
+        navCopyCount++
+
+        navCopy.innerText = navCopyCount
+        
+    }
+
+
+})
