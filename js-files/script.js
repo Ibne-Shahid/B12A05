@@ -26,7 +26,7 @@ function buttonHandler (buttonId, titleId, eNumber){
 
     document.getElementById("coins-count").innerText = coinsCount-20
 
-    alert(`📞 Calling ${title} - ${emergencyNumber}...`);
+    alert(`📞 Calling ${title} ${emergencyNumber}...`);
 
 
 })
@@ -46,3 +46,27 @@ buttonHandler("police-helpline-button", "police-helpline-title", "police-number"
 // Fire Service
 
 buttonHandler("fire-service-button", "fire-service-title", "fire-service-number")
+
+// Ambulance Service
+
+buttonHandler("ambulance-service-button", "ambulance-title", "ambulance-number")
+
+// Women & Child Helpline
+
+buttonHandler("women-and-child-button", "women-and-child-title", "women-and-child-number")
+
+// Anti Corruption Helpline
+
+buttonHandler("anti-corruption-button", "anti-corruption-title", "anti-corruption-number")
+
+// Electricity Helpline
+
+buttonHandler("electricity-button", "electricity-title", "electricity-number")
+
+// Brac Helpline
+
+buttonHandler("brac-button", "brac-title", "brac-number")
+
+// Bangladesh Railway Helpline
+
+buttonHandler("railway-button", "railway-title", "railway-number")
