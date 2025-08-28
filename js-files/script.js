@@ -53,7 +53,7 @@ function buttonHandler(buttonId, titleId, eNumber) {
             div.innerHTML = `
     <div class="bg-[#fafafa] rounded-lg p-4 flex justify-between items-center">
                             <div>
-                                <h1 class="font-inter font-semibold text-sm">${history.service}</h1>
+                                <h1 class="font-inter font-semibold text-xs">${history.service}</h1>
                                 <p class="text-[#5c5c5c] font-hindmadurai text-sm">${history.number}</p>
                             </div>
                             <p class="text-xs">${history.time}</p>
